@@ -1,11 +1,11 @@
 # Project: Number Printer 35
 # Project ID: proj-20260419-num-print-35
 
-## Task: task-20260419-num-35-01 - Implement print_numbers function
-- **Goal**: Implement a Python function that prints numbers from 1 to 35 sequentially.
+## Task: task-20260419-num-35-02 - Implement Unit Test for print_numbers
+- **Goal**: Verify that `print_numbers()` correctly outputs numbers from 1 to 35.
 - **Implementation Plan**:
-    1. Create `num_print.py` and implement the `print_numbers()` function.
-    2. Use a loop to print numbers from 1 to 35.
-    3. Create `TEST.md` with verification steps.
-- **Dependencies**: None (Standard Python)
-- **Estimated Time**: 5 minutes
+    1. Create `test_num_print.py` using the `unittest` framework.
+    2. Use `unittest.mock.patch` and `io.StringIO` to capture `sys.stdout`.
+    3. Compare the captured output with the expected range of numbers [1, ..., 35].
+- **Dependencies**: `unittest` (Standard Library)
+- **Estimated Time**: 10 minutes
