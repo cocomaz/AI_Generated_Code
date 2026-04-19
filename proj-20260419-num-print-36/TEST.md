@@ -1,10 +1,12 @@
-# Test Plan for proj-20260419-num-print-36
+# Test Plan for proj-20260419-num-print-36 (Unit Tests)
 
 ## Verification Commands
 ```bash
-python3 /home/node/.openclaw/workspace/proj-20260419-num-print-36/num_print.py
+cd /home/node/.openclaw/workspace/proj-20260419-num-print-36/
+python3 -m unittest test_num_print.py
 ```
 
 ## Test Cases
-1. **Sequential Output**: Verify that numbers start at 1 and end at 36.
-2. **Count**: Verify that exactly 36 lines are printed.
+1. **Output Range**: Verify that the function starts printing at 1 and ends at 36.
+2. **Sequentiality**: Verify that each number follows the previous one incremented by 1.
+3. **Exact Count**: Verify that exactly 36 numbers are printed.
